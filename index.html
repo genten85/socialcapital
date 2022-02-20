@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Trends in American Social Capital</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://unpkg.com/jquery@3.4.1/dist/jquery.js"
+      crossorigin=""
+    ></script>
+
+    <!-- Leaflet - Internally Sourced -->
+    <link rel="stylesheet" href="leaflet.css" />
+    <script src="leaflet.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900"
+      rel="stylesheet"
+    />
+
+    <!-- Webpage CSS -->
+  <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="default.css" />
+  <link rel="stylesheet" href="webmap.css" />
+
+    <!-- <script src="https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.js"></script> -->
+    <!-- <link
+      href="https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.css"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js"></script>
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="https://genten85.github.io/beacon_light/">Home</a></li>
+              <li><a href="https://genten85.github.io/beacon_light/projects.html">Projects</a></li>
+              <li>
+                <a href="https://genten85.github.io/Capstone/" target="blank">Capstone</a>
+              </li>
+              <li><a href="https://genten85.github.io/beacon_light/about.html">About</a></li>
+              <li><a href="mailto: sasuke.085@hotmail.com">Contact</a></li>
+              <li>
+                <a href="https://www.esri.com/en-us/home" target="blank">Esri</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <video autoplay muted loop id="myVideo">
+      <source src="production ID 4423711.mp4" type="video/mp4" />
+    </video>
+    <div id="title">
+      <h1>Trends in American Social Capital</h1>
+    </div>
+    <div id="background">
+      <div class="summary">
+        Social captial can be defined as: relationships among people who
+        co-exist in a society that enables it to function and thrive. It is a
+        difficult topic to quantify and use for analyses, but useful for
+        fostering discourse about the conditions of our society. What does it
+        take for people to connect? To care? To become active in their
+        community? These are questions worth pondering on. One of the problems
+        related to social capital relates to the concerns of neoliberalism,
+        which tends to prioritize individual engagement and public-private
+        partnerships as a way to ameliorate social issues. Assuming that theses
+        approaches work ignore the more pernicious, structural problems that are
+        beyond the capacity for a capitalist society to evoke change. Reforming
+        welfare and implementing austerity policies for instance has a potential
+        to threaten individual well-being and the economy, and is related to an
+        increase in socio-emotional problems like anxiety and trauma,
+        depression, sleep disorders, and worse: suicide. Below are a series of
+        maps that show changes in economic figures in the United States from
+        1997-2014 in the following categories: Employment-to-Poverty Ratio, Gini
+        Index, TANF Caseload-to-Poverty Ratio, and TANF Caseload-to-Deep Poverty
+        Ratio. <br> <br>
+      </div>
+      <div class="box">
+        <div id="div1"></div>
+        <script src="pov.js"></script>
+        <div id="div2"></div>
+        <script src="deeppov.js"></script>
+        <div id="clear"></div>
+      </div>
+      <div class="summary">
+        <br> <br> Bill Clinton signed the Personal Responsibility and Work Opportunity Act
+        (PRWOA) in 1996, which drastically changed American welfare prior to the
+        start of the 21st century. In short, the bill replaced the Aid to
+        Families and Dependent Children with Temporary Assistance for Needy
+        Families, imposed strict eligibility requirements and penalties, changes
+        child benefit support, with the intent to reduce caseloads and push poor
+        Americans into the workforce. Welfare reform is one of many aspects that
+        is expressed with American neoliberalism; privatization, free trade, and
+        tax reform play roles that promote unregulated capitalism with little
+        regard for the well-being of the people. Ten years after PRWOA, while
+        fervor over the US housing market was at an all-time high, consumer debt
+        was also at an all-time high and subprime mortgages began to collapse.
+        Millions of Americans lost their jobs, homes, cars, and savings.
+        Unemployment rose, borrowing stopped, stocks tumbled, and the U.S.
+        national debt surged. It is important to note that PRWOA's five-year
+        lifetime limits, which barred poor Americans from accessing welfare,
+        exacerbated economic recovery. With no job or resources, the poorest are
+        left with little to no hope in making a stake in the American Dream.
+        That reality still applies to this day.
+      </div>
+      <div class="box">
+        <div id="div3"></div>
+        <script src="emppop.js"></script>
+        <div id="div4"></div>
+        <script src="gini.js"></script>
+        <div id="div5"></div>
+        <script src="uninsured.js"></script>
+        <div id="clear"></div>
+      </div>
+      <div class="summary">
+      There are many interesting observations to make based on the set of variables. </br></br>
+      <div id="left"> > Changes in the employment-to-population ratio over time coincided with conditions in the economy; after the housing market crashed, employment dropped. South Carolina, Alabama, Louisiana, and Mississippi consistently experienced the poorest results in employment over time. <br /> > Similar with the employment rate, changes to the uninsured rate over time coincided with conditions in the economy. After the housing market crashed, the uninsured rate rose. The uninsured rate for Texas was consistently the worst, but experienced notable change from 2009 to 2014. The passage of the Affordable Care Act contributed to a significant decline in the uninsured rate.<br /> > Wealth inequality is demonstrated to significantly climb since the Census began calculating the Gini Index. New York generally experienced the greatest in wealth inequality based on this data.<br />
+        > It became increasinly difficult for single mothers to access TANF, especially in at least ten states where there is around ten families receiving TANF for every hundred families with children in poverty. Most of these are southern states; Louisiana, Texas, Georgia, North Carolina, Arizona, Oklahoma, Florida, and Mississippi. <br/> > Some Northern states consistently experience a greater social capital index, while the some Southern states consistently experienced a lower social capital index. <br /><br />Maps are visualized using various shades of blue. Light shades of blue reflect 'lack of' something while darker shades reflect 'more of' something. For instance, a lighter shade reflects greater inequality in the Gini Index map. A darker shade reflects a lower uninsured rate in the Uninsured Rate map. </div><br />References: <a href="https://www.bls.gov/bls/newsrels.htm" target="blank">Bureau of Labor Statistics</a>,
+        <a href="https://factfinder.census.gov" target="blank">Census Bureau</a>, <a href="https://www.cbpp.org/in-16-states-10-or-fewer-families-receive-tanf-direct-financial-support-for-every-100-families-in" target="blank">Center on Budget and Policy Priorities</a>, <a href="https://aese.psu.edu/nercrd/community/social-capital-resources" target="blank">Pennsylvania
+        State University.</a><br />
+        Basemap References: CARTO, ESRI, Wikimedia Foundation
+      </div>
+      <div class="box">
+        <div id="mapid"></div>
+        <script src="webmap.js"></script>
+        <div id="clear"></div>
+      </div>
+    </div>
+  </body>
+</html>
